@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="toggle-mode">
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round"></span>
+        </label>
+        <span id="mode-label"></span>
+    </div>
+
+    <div class="wrapper">
+        <img class="content-img" src="images/logo.png" alt="Eagletech_Logo">
+        <h1>CGPA Calculator</h1>
+        
+        <!-- Error Message -->
+        <div id="error-message" class="display-none error-message">Please fill out all fields correctly.</div>
+
+        <!-- Input form -->
+        <div class="form-row">
+            <input id="course-code" type="text" placeholder="Course Code">
+            <input id="unit-load" type="number" placeholder="Unit Load" min="1" max="10">
+            <select id="grade">
+                <option value="">Grade</option>
+                <option value="5">A</option>
+                <option value="4">B</option>
+                <option value="3">C</option>
+                <option value="2">D</option>
+                <option value="1">E</option>
+                <option value="0">F</option>
+            </select>
+            <input id="add" class="btn-primary" type="button" value="Add">
+        </div>
+
+        <!-- Table to display added courses -->
+        <table id="table" class="display-none">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit Load</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <tfoot id="tfoot"></tfoot>
+        </table>
+
+        <!-- Calculation and Clear buttons -->
+        <div class="row">
+            <input id="calc-gp" class="btn-success display-none" type="button" value="Calc CGPA">
+            <input id="clear" class="btn-warning display-none" type="button" value="Clear">
+        </div>
+    </div>
+
+    <!-- Link to the custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
