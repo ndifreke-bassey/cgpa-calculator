@@ -43,8 +43,7 @@ The **CGPA Calculator** is a simple yet powerful web app designed to help univer
 6. **Switch themes**: Toggle between **Light** and **Dark** mode for a personalized look and feel.
 
 ## 🌐 Live Demo
-Want to see it in action? 🚀 You can launch this CGPA Calculator directly in your web browser!
-
+Check it out here: [CGPA Calculator Live](https://eagle-cgpa.netlify.app/) 🚀
 
 ## 👨‍💻 Author
-Made with ❤️ by **Eagletech** — _Soaring through Innovation!_ ✈️
+Made with ❤️ by **Ndifreke-Abasi Bassey** — _Soaring through Innovation!_ ✈️
